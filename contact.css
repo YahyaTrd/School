@@ -1,0 +1,123 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+
+.contact__contianer {
+  display: grid;
+  padding: 4rem;
+  background: var(--color-bg1);
+  grid-template-columns: 50% 60%;
+  height: 30rem;
+  gap: 4rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+.contact__aside {
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  width: 70%;
+  left: 2%;
+  background: var(--color-primary);
+  bottom: 10rem;
+}
+.aside__image {
+  width: 300;
+  margin-bottom: 2rem;
+}
+.contact__aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact__aside h5 {
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.contact__aside .fa-solid {
+  color: var(--color-danger);
+  font-size: 1.5rem;
+}
+.contact__aside .fa-regular {
+  color: var(--color-danger);
+  font-size: 1.5rem;
+}
+.contact__form {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  margin-right: 12rem;
+}
+.form__name {
+  gap: 1.2rem;
+  display: flex;
+}
+.contact__form input[type="text"] {
+  width: 50%;
+  border-radius: 0.4rem;
+}
+input,
+textarea {
+  width: 100%;
+  background: var(--color-bg2);
+  color: var(--color-white);
+  padding: 1rem;
+}
+.contact__form .btn {
+  width: max-content;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .contact__contianer {
+    margin-top: 1.3rem;
+    gap: 1.5rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .contact__aside {
+    width: auto;
+    bottom: 0;
+    padding: 1.5rem;
+  }
+  .contact__form {
+    align-self: center;
+    margin-left: 2rem;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact__contianer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  .contact__aside {
+    width: 80%;
+  }
+  img {
+    width: 100%;
+  }
+  .contact__form {
+    margin: 0 1.5rem 3rem;
+  }
+}
