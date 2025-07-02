@@ -64,8 +64,17 @@
             </li>
           </ul>
         </aside>
-        <form class="contact__form">
+        <form
+          class="contact__form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
           <div class="form__name">
+            <input
+              type="hidden"
+              name="access_key"
+              value="f1773702-6256-4026-8353-0baa699f8950"
+            />
             <input
               type="text"
               name="First Name"
